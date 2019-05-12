@@ -12,7 +12,7 @@ class ViewPager2Activity : AppCompatActivity() {
         val viewPager = findViewById<ViewPager2>(R.id.view_pager)
         val userList = arrayListOf("John", "Doe", "Foo", "Bar")
         viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-        viewPager.adapter = UserAdapter(userList, supportFragmentManager)
+        viewPager.adapter = ViewPager2Adapter(userList, supportFragmentManager)
     }
 
 }
