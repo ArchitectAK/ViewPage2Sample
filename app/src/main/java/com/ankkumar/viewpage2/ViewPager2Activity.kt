@@ -10,7 +10,7 @@ class ViewPager2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity)
         val viewPager = findViewById<ViewPager2>(R.id.view_pager)
-        val userList = arrayListOf("John", "Doe", "Foo", "Bar")
+        val userList = arrayListOf("Android", "Kotlin", "Java", "XML")
         viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         viewPager.adapter = ViewPager2Adapter(userList, supportFragmentManager)
     }
